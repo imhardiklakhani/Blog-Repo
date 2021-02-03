@@ -1,0 +1,21 @@
+import java.util.*
+
+// How do you find the duplicate number on a given integer array?
+
+fun main() {
+   
+    val arr = arrayListOf(4, 5, 8, 3, 4, 11,5,8, 15, 3,4,4)
+    
+	println(arr.groupingBy { 
+            it
+        }.eachCount().filter{
+	        it.value>1
+    })
+}
+
+/*
+OUTPUT:
+
+{4=4, 5=2, 8=2, 3=2}
+
+*/
