@@ -1,0 +1,21 @@
+//How do you find the largest and smallest number in an unsorted integer array?
+
+fun main() {
+   
+    val number = arrayOf(15, 24, 90, 4, 5, 1200, 8, 3, 47, 1, 45, 20)
+   
+    println("Min ${number.minOrNull()}")
+    println("Max ${number.maxOrNull()}")
+    
+}
+
+
+/*
+
+
+OUTPUT:
+
+Min 1
+Max 1200
+
+*/
